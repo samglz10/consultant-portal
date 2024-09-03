@@ -1,8 +1,10 @@
 import { useState } from "react";
+//import { v4 as uuidv4 } from 'uuid';
+import { v1 as uuidv1 } from 'uuid';
 
 const WorkOrderForm =()=>{
     const [formData, setFormData] = useState({
-        id:'',
+        id: uuidv1(),
         clientFirstName:'',
         clientLastName:'',
         clientAddress: '',
@@ -23,11 +25,12 @@ const WorkOrderForm =()=>{
 
     const handleSubmit = (e) => {
         e.preventDefault(); // Prevent the default form submission behavior
+        alert('Submitted!')
         console.log('Form Data:', formData);
         // Here you could do something with the form data, like sending it to an API
       };
     return (
-    <form id="workOrderForm">
+    <form id="workOrderForm" onSubmit={handleSubmit}>
     <div className="work-container">
         <h3>Client Information:</h3>
             <label htmlFor="clientFirstName">Client First Name:  </label>
@@ -104,8 +107,8 @@ const WorkOrderForm =()=>{
                 onChange={handleInputChange} 
                 required/>
      </div>
-        <button type="button">Submit Work Order</button>
-    </form>
+        <button type="submit" >Submit Work Order</button>
+    </form >
 )
 }
 export default WorkOrderForm;

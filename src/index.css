@@ -22,6 +22,10 @@ body {
   min-width: 320px;
   height: 100%;
 }
+h1{
+  margin: 0;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -61,12 +65,19 @@ form {
   flex-direction: column;
 }
 nav{
-display: flex;
-justify-content: center;
-background: #252525;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #252525;
+  position:fixed;
+  overflow: hidden;
+  height: 5%;
+  width: 100%;
+  z-index: 1000;
+  background-color: black;
 }
 nav a {
-  color: #646cff;
+  color: #ffffff;
   text-decoration: wavy;
   margin: 0 15px;
   font-size: 1.2em;
@@ -82,4 +93,27 @@ nav a:hover {
 span{
   font-size: x-0small;
 }
+
+header{
+  width: 100%;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: 80%;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header{
+  margin-top: 10%;
+}
+
 

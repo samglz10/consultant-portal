@@ -4,16 +4,14 @@ import WorkOrderForm from "./WorkForm"
 const Home = ()=>{
     return (
         <>
-    <header>
-        <h1>Freelance Generalist Consultant</h1>
-        <NavBar/>
-    </header>
-    <section id="showcase">
-        <div className="showcase-container">
-            <h1>Providing Consultation Solutions for you</h1>
-            <p>Helping you achieve your goals with technology and expertise.</p>
+    <NavBar style={{ position: 'sticky'}}/>
+    <header id="home">
+        <div className="container">
+                <h1>Freelance Consultant</h1>
+                <h2>Providing Consultation Solutions for you</h2>
+                <p>Helping you achieve your goals with technology and expertise.</p>
         </div>
-    </section>
+    </header>
     <section id="about" className="container">
         <h2>About Me</h2>
         <div className="box">
