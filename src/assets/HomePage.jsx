@@ -1,5 +1,7 @@
 import NavBar from "./Navbar"
 import WorkOrderForm from "./WorkForm"
+import { FcSelfServiceKiosk, FcAbout } from "react-icons/fc";
+
 
 const Home = ()=>{
     return (
@@ -13,13 +15,13 @@ const Home = ()=>{
         </div>
     </header>
     <section id="about" className="container">
-        <h2>About Me</h2>
+        <h2> <FcAbout/> About Me</h2>
         <div className="box">
             <p>As a freelance consultant, I specialize in helping businesses streamline their operations through effective use of technology. I offer a range of services designed to meet your unique needs.</p>
         </div>
     </section>
     <section id="services" className="container">
-        <h2>Services</h2>
+        <h2><FcSelfServiceKiosk/> Services</h2>
         <div className="box">
             <h3>IT Consulting</h3>
             <p>Providing expert advice on technology solutions that fit your business.</p>
