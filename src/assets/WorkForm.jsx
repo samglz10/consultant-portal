@@ -28,6 +28,7 @@ const WorkOrderForm =()=>{
         alert('Submitted!')
         console.log('Form Data:', formData);
         // Here you could do something with the form data, like sending it to an API
+        
       };
     return (
     <div id="workForm-container">

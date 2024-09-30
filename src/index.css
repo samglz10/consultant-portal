@@ -72,9 +72,10 @@ form {
   flex-direction: column;
   justify-content: center;
 }
-nav{
+nav {
   display: flex;
-  justify-content: space-around;
+  text-align: center;
+  justify-content:space-evenly;
   align-items: center;
   background: #252525;
   position:fixed;
@@ -82,16 +83,16 @@ nav{
   top:0;
   height: 7.5%;
   width: 100%;
-  z-index: 1000;
+  z-index: 100;
   background: rgb(58,68,255);
   background: linear-gradient(347deg, rgba(58,68,255,1) 0%, rgba(145,0,255,1) 100%);
-  
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 nav a {
   color: #ffffff;
   text-decoration: wavy;
-  margin: 0 15px;
+  text-align: center;
+  margin: auto;
   font-size: 1.2em;
 }
 nav a:hover {
@@ -121,15 +122,15 @@ header{
 
 #workOrderForm{
   display: flex;
+  text-align: center;
+  justify-content: center;
   width: 75%;
-  border: #535bf2 solid 1px;
   padding: 0 2rem;
-  border-radius: 2.5%;
+  border-radius: 20px;
 }
 
 .container{
   display: flex;
-  padding: 10px;;
   flex-direction: column;
   align-content: center;
   align-items: center;
@@ -157,5 +158,5 @@ header{
 
 
 .contact{
-  height: 200%;
+  height: 100%;
 }
